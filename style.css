@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dosis&family=Inter&family=Poppins:wght@300&family=Radio+Canada&family=Roboto:ital,wght@0,300;1,300&family=Tektur:wght@700&family=Viaoda+Libre&display=swap');
+
+:root{
+  --primary-color: #ea5219ff;
+  --secondary-color: #171810ff;
+  --bg-container:  rgb(241, 241, 241);
+  --bg-mini-container: rgb(255, 255, 255);
+  --letter-color: rgb(80, 80, 80);
+  --outline-container: rgb(218, 213, 213);
+  --footer-color:  rgb(185, 184, 184);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  overflow-x: hidden;
+}
+
+html{
+  height: 100vh;
+}
+body{
+  font-family: 'Dosis', sans-serif;
+  background-color: var(--primary-color);
+}
+
+/* CSS - GERAL Mobile */
+.general{
+  padding-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side_image {
+  display: none;
+}
+
+.content_general{
+  border: 0.0625em solid transparent;
+  background-color:var(--bg-container);
+  box-shadow: 2px 2px 10px  var(--secondary-color);
+  padding: 3em .3em;
+  box-sizing: border-box;
+  border-radius: .2em;
+  width: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.general h2{
+  color: var(--secondary-color);
+  font-weight: bold;
+  /* padding-bottom: .2em; */
+}
+
+.general p{
+  text-align: center;
+  color: var(--letter-color);
+  font-size: 1.1em;
+}
+
+.material-symbols-outlined{
+  color: var(--primary-color); 
+  padding-bottom: .2em;
+}
+/* FIM GERAL Mobile */
+/* ********************************** */
+/* CSS - HEADER Mobile*/ 
+.logo_header img{
+  padding: .8em;
+  box-sizing: border-box; 
+  height: 5em;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--bg-mini-container);
+  width: 100%;
+  position: fixed;
+  z-index: 1; 
+}
+
+.nav_header{
+    display: none;
+}
+
+.nav_header.show{
+  display: block;
+}
+
+/* Menu hamburger */
+#hamburger{
+  border-radius: 0.0625em solid var(--secondary-color);
+  border-radius: .1em;
+  color: var(--primary-color); 
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* background menu hamburger */
+.menu{
+  background-color: var(--secondary-color)
+}
+
+/* background itens que aparecem ao clicar no menu hamburger */
+#itens_menu {
+  background-color: var(--secondary-color);
+}
+
+#itens_menu a{
+  text-decoration: none;
+  color: var(--bg-mini-container);
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  display: block;
+  padding: .5em .2em;
+  box-sizing: border-box;
+}
+
+#itens_menu a:hover{
+  color: var(--primary-color);
+}
+
+.nav_header ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+/* FIM estilo HEADER Mobile*/
+/* ********************************** */
+/* CSS - BANNER Mobile*/
+.banner_content{
+  background-image: url(imagens/banner_vertical.png);
+  background-size: cover;
+  background-position: top center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  padding-bottom: 2em;
+}
+
+.banner_content h1{
+  color:  var(--bg-mini-container);
+  font-size: 2.5em;
+  text-align: center;
+  width: 5em;
+}
+
+.banner_content h2{
+  color: var(--secondary-color) ;
+}
+/* FIM estilo BANNER Mobile*/
+/* ********************************** */
+/* CSS INÍCIO - MOBILE FIRST*/
+.bg_start{
+  display: none;
+}
+/* FIM INÍCIO - MOBILE FIRST*/
+/* ********************************** */
+/* CSS DESAFIOS - MOBILE FIRST*/
+.challenge_image{
+  display: none;
+}
+ /* FIM DESAFIOS - MOBILE FIRST*/
+/* ********************************** */
+ /* CSS CONQUISTAS - MOBILE FIRST*/
+.highlights{
+  display: none;
+}
+/* FIM CONQUISTAS - MOBILE FIRST*/
+/* ********************************** */
+ /* CSS APRENDIZAGEM MOBILE FIRST- ARQUIVO PROGRESS.CSS*/
+/* ********************************** */
+
+ /* CSS PROJETOS - MOBILE FIRST*/
+
+ .main_project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  }
+
+  .project_videos{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .video iframe{
+    width: 85vw;
+    height: 15em;
+  }
+
+  .project_videos_content{
+    margin-top: .8em;
+    padding: .1em;
+    text-align: center;
+  }
+
+  .project_videos_content p{
+    margin-top: .8em;
+    
+    
+  }
+
+  .pipe{
+    display: inline-block;
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+    padding: 0 .3em;
+  }
+
+
+  .project_videos_content h2{
+    color: var(--primary-color); 
+   
+  }
+
+  .project_videos_content a:hover{
+    background-color: var(--bg-container);
+  }
+
+
+/* FIM PROJETOS - MOBILE FIRST*/
+/* ********************************** */
+/* CSS DEPOIMENTO - MOBILE FIRST*/
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:transparent;
+  padding-top: 1em;
+  color:var(--bg-mini-container); 
+  width: 80%;
+  height: max-content; 
+}
+
+#gallery{
+  padding-top: 6em;
+}
+/* FIM DEPOIMENTO - MOBILE FIRST*/
+/* ********************************** */
+/* CSS FOOTER - MOBILE FIRST*/
+.contacts{
+  background-color:  var(--bg-container);
+  width: 100vw;
+  padding: 1.5em;
+  text-align: center;
+}  
+
+.contacts h3{
+  font-size: 1.2em;
+  padding-bottom: .5em;
+  font-weight: bold;
+  color:var(--letter-color);
+}  
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  }
+
+.icons img{
+  width: 2.5em;
+}
+
+.copy{
+  background-color: var(--footer-color);
+  padding: .8em 0 .2em;
+  text-align: center;
+}  
+
+.copy span{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/* FIM FOOTER - MOBILE FIRST*/
+/* ********************************** */
+
+@media screen and (min-width: 576px){
+
+body{
+  background-color: var(--bg-mini-container);
+}
+
+/* CSS - GERAL breakpoint min 576px */
+.material-symbols-outlined {
+  display: none !important;
+}
+
+.general h2{
+  color: var(--primary-color);
+  font-size: 3em;
+}
+
+.content_general{
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: none;
+  padding: 2em;
+  width: 40vw;
+  height: 25em;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.content_general p{ 
+  text-align: left;
+}
+/* FIM GERAL breakpoint min 576px */
+/* ********************************** */
+/* CSS - HEADER breakpoint min 576px*/ 
+.header{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  position: fixed;
+}
+
+.nav_header{
+  display: flex;
+  padding-top: .6em; 
+}
+
+.nav_header ul{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .3em;
+}
+
+#itens_menu.nav_header a{
+  font-size: .8em;
+}
+
+#hamburger{
+  display: none;
+}
+
+#itens_menu{
+  background-color: var(--bg-mini-container);
+}
+
+#itens_menu a{
+  color: var(--secondary-color);
+}
+/* FIM estilo HEADER breakpoint min 576px*/ 
+/* ********************************** */
+/* CSS - BANNER breakpoint min 576px*/
+.banner_content{
+  background-image: url(imagens/banner_horizontal.png);
+  background-position: top right;
+  width: 100vw;
+  padding-left: 6vw;
+  padding-top: 5em;  
+  justify-content: center;
+  align-items: flex-start;  
+}
+
+.banner_content h1{
+  text-align: left;
+  font-size: 3.5em;
+  width: 5em
+}
+
+.banner_content h2{
+  font-size: 1.5em ;
+}
+/* FIM estilo BANNER breakpoint min 576px*/ 
+/* ********************************** */
+/* SOBRE MIM breakpoint min 576px */
+.about-me{
+  background-image: url(imagens/bg_about-me.png);
+  background-size: cover;
+  background-position: center bottom;
+  width:100vw;
+  height: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  padding-top: 6em;
+}
+
+.about-me img {
+  width: 40vw;
+  padding-left: 1em; 
+  }
+
+.side_image {
+  display: block;
+}
+  
+/* Especificar o 'about-me_content' em detrimento do content_general' */
+section.about-me .about-me_content{
+  background-color: var(--bg-mini-container);
+  font-size: 1em;
+  text-align: left; 
+  width: 25em;
+}
+
+.about-me_content p{
+  background-color: var(--bg-mini-container);
+  font-size: 1em;
+  text-align: left; 
+}
+/* FIM 'SOBRE MIM' breakpoint min 576px */
+/* ********************************** */
+/* CSS 'INÍCIO' breakpoint min 576px */
+.start{ 
+  height:100vh;
+  background-image: url(imagens/g1620.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.start_content{
+  border-radius: 1em;
+  box-shadow: 2px 2px 8px var(--secondary-color);
+  width: 34.5em;
+  margin-top: 3em;
+}
+/* FIM 'INÍCIO' breakpoint min 576px */
+/* ********************************** */
+/* CSS 'DESAFIOS' breakpoint min 576px */
+.challenge{
+  background-color: var(--bg-mini-container);
+  height: auto;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge_image{ 
+  display: block;
+}
+
+.challenge_image img{ 
+  width: 30em;
+}
+
+.challenge_content{
+  background-color: var(--bg-mini-container);
+  width: 30em;
+}
+/* FIM 'DESAFIOS' breakpoint min 576px */
+/* ********************************** */
+/* CSS 'CONQUISTAS breakpoint min 576px */
+.achievement{
+  /* display: flex;*/  /*aplicado na .general */
+  /* align-items: center; */ /*aplicado na .general */
+  flex-direction: column;
+  margin-bottom: 10em;
+}
+
+.achievement_content {
+  background-color: transparent;
+  width: 60vw;
+  height: fit-content;
+  align-items: center;
+  /* display: flex; */ /*aplicado na .content_general */
+  /* justify-content: center; */ /*aplicado na .content_general */ 
+}
+  
+.achievement_content p{
+  text-align: center;
+}
+
+.highlights{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  padding-bottom: 2em;
+}
+
+.achievement_img{
+  display: flex;
+  align-items: center;
+  width: 16em;
+  outline: 0.125em solid rgb(218, 213, 213);
+  padding: .7em;
+  box-sizing: border-box;
+}
+  
+.achievement_img img{
+  position: relative;
+  padding-right: .4em;
+  width: 15em;
+  height: 14em;
+}
+ 
+.achievement_img h3{
+  margin-top: .6em;
+  text-align: center;
+}
+  
+.achievement_img p{
+  font-size: .9em;
+}
+
+.achievement_img_content{
+  position: absolute;
+  background-color: var(--bg-mini-container);
+  width: 14em;
+  height: 10em;
+  padding: .2em;
+  box-sizing: border-box;
+  margin-top: 20em;
+  margin-left: .3em;
+  box-shadow: 2px 2px 8px var(--secondary-color);
+  transition: transform .5s ease;
+}
+
+.achievement_img_content:hover{
+  transform: scale(1.1);
+  cursor: default;
+}
+
+.icon{
+  display: block !important;
+}
+/* FIM 'CONQUISTAS' breakpoint min 576px */
+/* ********************************** */
+ /* CSS APRENDIZADO breakpoint min 576px- ARQUIVO PROGRESS.CSS*/
+/* ********************************** */
+/* PROJETOS breakpoint min 576px */
+#project .content_general {
+  height: 100%; 
+}
+
+.project_content{
+  background-color: transparent;
+  align-items: center;
+}
+
+.project{
+  padding-top: 7em;
+}
+
+.project_title{
+  padding-bottom: 1em;
+}
+
+.main_project{
+  gap: 3em;
+}
+
+.project_videos{
+ width: 20em;
+ justify-content: flex-start;
+ height: 28em;
+ outline: 0.16em solid var(--outline-container) ;
+ padding: .5em;
+}
+
+.project_videos h2{
+  font-size: 1.2em;
+ }
+
+.video iframe{
+  width: 19em;
+  height: 13em;
+}
+/* FIM 'PROJETOS' breakpoint min 576px */
+/* ********************************** */
+/* CSS FOOTER breakpoint min 576px */
+.icons{
+  flex-direction: row;
+  gap: 2em;
+}
+/* FIM FOOTER breakpoint min 576px */
+}
+
+
+@media screen and (min-width: 992px){
+
+/* CSS - GERAL breakpoint min 992px */
+.side_image img{
+  display: block;
+  padding-top: 5em;
+}
+/* FIM GERAL breakpoint min 992px */
+  /* ********************************** */
+/* CSS - BANNER breakpoint min 992px */
+.banner_content{
+  padding-left: 6em;
+}
+
+.banner_content h1{
+  font-size: 4em;
+  width: fit-content;
+}
+
+.banner_content h2{
+  font-size: 2.5em ;
+}
+/* FIM - BANNER breakpoint min 992px */
+/* ********************************** */
+/* SOBRE MIM breakpoint min 992px */
+.about-me_content{
+  width: 30vw;
+  padding-top: 1em; 
+  background-color: white; 
+}
+/* FIM SOBRE MIM breakpoint min 992px */
+/* ********************************** */
+/* INÍCIO breakpoint min 992px */
+.start{
+  padding-bottom: 0;
+}
+/* FIM INÍCIO breakpoint min 992px */
+/* ********************************** */
+/* CSS 'DESAFIOS' breakpoint min 992px */
+.challenge{
+  flex-direction: row;
+  height: 100vh;
+  padding-bottom: 2em; 
+} 
+
+.challenge_image img{
+  width: 40em;
+}
+
+.challenge_content{
+  height: 30em;
+}
+/* FIM 'DESAFIOS' breakpoint min 992px */
+/* ********************************** */
+/* CSS 'CONQUISTAS' breakpoint min 992px */
+.achievement{
+  padding-top: 5em;
+}
+
+.highlights{
+  flex-direction: row;
+  gap: 2em;
+}
+/* FIM 'CONQUISTAS' breakpoint min 992px */
+/* ********************************** */
+/* CSS 'PROJETOS' breakpoint min 992px */
+.main_project{
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85vw;
+  height: max-content;
+  gap: 1.5em;
+}
+/* FIM 'PROJETOS' breakpoint min 992px */
+/* ********************************** */
+/* CSS 'DEPOIMENTO' breakpoint min 992px */
+  .carousel-item{
+    height: 80vh;
+  }
+
+
+/* FIM 'DEPOIMENTO' breakpoint min 992px */
+/* ********************************** */
+}
+  
+
+
+
+
+
+
